@@ -1,0 +1,27 @@
+[general]
+import = ["~/.config/alacritty/themes/themes/catppuccin_macchiato.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+padding = { x = 10, y = 10 }
+decorations = "full"
+opacity = 0.8
+blur = true
+option_as_alt = "Both"
+
+[font]
+normal = { family = "MononokiNerdFont", style = "Regular" }
+bold = { family = "MononokiNerdFont", style = "Bold" }
+italic = { family = "MononokiNerdFont", style = "Italic" }
+bold_italic = { family = "MononokiNerdFont", style = "BoldItalic" }
+size = 17.0
+
+[terminal]
+shell = "/bin/fish"
+
+[keyboard]
+bindings = [
+  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
+]
