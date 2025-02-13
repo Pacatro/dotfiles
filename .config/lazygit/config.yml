@@ -1,0 +1,12 @@
+customCommands:
+  - key: "a"
+    description: "add a new remote"
+    context: "localBranches"
+    prompts:
+      - type: "input"
+        title: "Remote Name"
+        initialValue: "upstream"
+      - type: "input"
+        title: "Remote Url"
+        initialValue: ""
+    command: "git remote add {{index .PromptResponses 0}} {{index .PromptResponses 1}}"
