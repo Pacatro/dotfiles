@@ -11,6 +11,10 @@ opacity = 0.9
 blur = true
 option_as_alt = "Both"
 
+[window.dimensions]
+columns = 80
+lines = 30
+
 [font]
 normal = { family = "MononokiNerdFont", style = "Regular" }
 bold = { family = "MononokiNerdFont", style = "Bold" }

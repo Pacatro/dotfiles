@@ -8,6 +8,7 @@ starship init fish | source
 # Aliases
 alias e="exit"
 alias update="sudo dnf upgrade --refresh && sudo dnf system-upgrade download --releasever=41"
+alias update_apt="sudo apt update && sudo apt upgrade"
 alias vs="code"
 alias cls="clear"
 alias n="nvim"
