@@ -5,6 +5,11 @@ end
 # Use starship prompt
 starship init fish | source
 
+# Go
+set -x GOROOT /usr/local/go
+set -x GOPATH $HOME/go
+set -x PATH $PATH $GOROOT/bin $GOPATH/bin
+
 # Aliases
 alias e="exit"
 alias update="sudo dnf upgrade --refresh && sudo dnf system-upgrade download --releasever=41"

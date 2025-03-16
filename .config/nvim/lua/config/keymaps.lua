@@ -40,5 +40,9 @@ vim.api.nvim_set_keymap("n", "<leader>ih", "<cmd>lua vim.lsp.inlay_hint(0, false
 
 -- Diagnostics
 keymap.set("n", "<C-j>", function()
-  vim.diagnostic.goto_next()
+  vim.diagnostic.jump({ count = 1, float = true })
+end, opts)
+
+keymap.set("n", "<C-k>", function()
+  vim.diagnostic.jump({ count = -1, float = true })
 end, opts)
