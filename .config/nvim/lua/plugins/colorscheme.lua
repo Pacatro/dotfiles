@@ -6,7 +6,7 @@
 --   vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 -- end
 
-COLOR = "dracula"
+COLOR = "catppuccin"
 
 return {
   { "rebelot/kanagawa.nvim" },
