@@ -31,7 +31,7 @@ fi
 unset rc
 . "$HOME/.cargo/env"
 
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(starship init bash)"
 
 export NVM_DIR="$HOME/.nvm"

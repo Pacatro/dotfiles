@@ -38,20 +38,11 @@ keymap.set("x", "<S-tab>", "L", opts)
 -- Hide inline hints
 vim.api.nvim_set_keymap("n", "<leader>ih", "<cmd>lua vim.lsp.inlay_hint(0, false)<CR>", opts)
 
--- Diagnostics last version
--- keymap.set("n", "<C-j>", function()
---   vim.diagnostic.jump({ count = 1, float = true })
--- end, opts)
---
--- keymap.set("n", "<C-k>", function()
---   vim.diagnostic.jump({ count = -1, float = true })
--- end, opts)
-
--- Diagnostics deprecated
+-- Diagnostics
 keymap.set("n", "<C-j>", function()
-  vim.diagnostic.goto_next({ float = true })
+  vim.diagnostic.jump({ count = 1, float = true })
 end, opts)
 
 keymap.set("n", "<C-k>", function()
-  vim.diagnostic.goto_prev({ float = true })
+  vim.diagnostic.jump({ count = -1, float = true })
 end, opts)
