@@ -1,0 +1,43 @@
+# Theme
+theme = catppuccin-macchiato.conf
+
+# Window
+window-height=30
+window-width=110
+
+# Background
+background-opacity = 0.8
+
+# Font
+font-family = "MononokiNerdFont"
+font-style = "Regular"
+
+font-family-bold = "MononokiNerdFont"
+font-style-bold = "Bold"
+
+font-family-italic = "MononokiNerdFont"
+font-style-italic = "Italic"
+
+font-family-bold-italic = "MononokiNerdFont"
+font-style-bold-italic = "BoldItalic"
+
+font-size = 16.0
+
+# Shell
+shell-integration = fish
+command = /usr/bin/fish
+
+
+# Key bindings
+keybind = ctrl+alt+h=goto_split:left
+keybind = ctrl+alt+j=goto_split:bottom
+keybind = ctrl+alt+k=goto_split:top
+keybind = ctrl+alt+l=goto_split:right
+keybind = ctrl+shift+h=new_split:left
+keybind = ctrl+shift+j=new_split:down
+keybind = ctrl+shift+k=new_split:up
+keybind = ctrl+shift+l=new_split:right
+keybind = super+shift+enter=new_split:auto
+keybind = super+shift+i=inspector:toggle
+keybind = super+shift+r=reload_config
+keybind = super+t=new_tab
