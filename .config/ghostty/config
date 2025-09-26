@@ -1,34 +1,29 @@
-# Theme
-theme = catppuccin-macchiato.conf
-
-# Window
-window-height=30
-window-width=110
-
-# Background
-background-opacity = 0.8
+# Dynamic theme colors
+config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
 
 # Font
-font-family = "MononokiNerdFont"
-font-style = "Regular"
+font-family = "Mononoki Nerd Font Mono"
+font-style = Regular
+font-size = 13
 
-font-family-bold = "MononokiNerdFont"
-font-style-bold = "Bold"
+# Window
+window-padding-x = 14
+window-padding-y = 14
+confirm-close-surface=false
+resize-overlay = never
 
-font-family-italic = "MononokiNerdFont"
-font-style-italic = "Italic"
-
-font-family-bold-italic = "MononokiNerdFont"
-font-style-bold-italic = "BoldItalic"
-
-font-size = 16.0
+# Cursor stlying
+cursor-style = "block"
+cursor-style-blink = false
+shell-integration-features = no-cursor
 
 # Shell
 shell-integration = fish
 command = /usr/bin/fish
 
 
-# Key bindings
+# Keyboard bindings
+keybind = f11=toggle_fullscreen
 keybind = ctrl+alt+h=goto_split:left
 keybind = ctrl+alt+j=goto_split:bottom
 keybind = ctrl+alt+k=goto_split:top

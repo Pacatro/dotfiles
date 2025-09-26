@@ -12,3 +12,5 @@ compinit
 # End of lines added by compinstall
 eval "$(starship init zsh)"
 
+
+. "$HOME/.local/share/../bin/env"
