@@ -4,7 +4,7 @@ config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
 # Font
 font-family = "Mononoki Nerd Font Mono"
 font-style = Regular
-font-size = 11
+font-size = 10
 
 # Window
 window-padding-x = 14
@@ -24,6 +24,8 @@ command = /usr/bin/fish
 
 # Keyboard bindings
 keybind = f11=toggle_fullscreen
+keybind = shift+insert=paste_from_clipboard
+keybind = control+insert=copy_to_clipboard
 keybind = ctrl+alt+h=goto_split:left
 keybind = ctrl+alt+j=goto_split:bottom
 keybind = ctrl+alt+k=goto_split:top
