@@ -2,11 +2,11 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-if status is-login
-    and status is-interactive
-    set -Ua SSH_KEYS_TO_AUTOLOAD ~/.ssh/github
-    keychain --eval $SSH_KEYS_TO_AUTOLOAD | source
-end
+# if status is-login
+#     and status is-interactive
+#     set -Ua SSH_KEYS_TO_AUTOLOAD ~/.ssh/github
+#     keychain --eval $SSH_KEYS_TO_AUTOLOAD | source
+# end
 
 # Locales
 set LANGUAGE en_US.UTF-8
@@ -35,6 +35,9 @@ alias vs="code"
 alias cls="clear"
 alias n="nvim"
 alias cd="z"
+
+# For SSH keys
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # # Greeting
 # function fish_greeting

@@ -6,9 +6,9 @@ source ~/.local/share/omarchy/default/bash/rc
 #
 # Make an alias for invoking commands you use constantly
 # alias p='python'
-. "$HOME/.cargo/env"
 
 # Starship prompt
 eval "$(starship init bash)"
 
 . "$HOME/.local/share/../bin/env"
+. "$HOME/.cargo/env"
