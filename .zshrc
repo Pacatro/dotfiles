@@ -14,3 +14,12 @@ eval "$(starship init zsh)"
 
 
 . "$HOME/.local/share/../bin/env"
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/home/pacatro/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<

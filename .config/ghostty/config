@@ -26,6 +26,10 @@ command = /usr/bin/fish
 keybind = f11=toggle_fullscreen
 keybind = shift+insert=paste_from_clipboard
 keybind = control+insert=copy_to_clipboard
+keybind = super+control+shift+alt+arrow_down=resize_split:down,100
+keybind = super+control+shift+alt+arrow_up=resize_split:up,100
+keybind = super+control+shift+alt+arrow_left=resize_split:left,100
+keybind = super+control+shift+alt+arrow_right=resize_split:right,100
 keybind = ctrl+alt+h=goto_split:left
 keybind = ctrl+alt+j=goto_split:bottom
 keybind = ctrl+alt+k=goto_split:top
@@ -38,3 +42,6 @@ keybind = super+shift+enter=new_split:auto
 keybind = super+shift+i=inspector:toggle
 keybind = super+shift+r=reload_config
 keybind = super+t=new_tab
+
+# Slowdown mouse scrolling
+mouse-scroll-multiplier = 0.95

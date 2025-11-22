@@ -22,6 +22,9 @@ starship init fish | source
 # Zoxide integration
 zoxide init fish | source
 
+# Try integration
+eval (/usr/bin/try init ~/src/tries | string collect)
+
 # # Go
 # set -x GOROOT /usr/local/go
 # set -x GOPATH $HOME/go
@@ -35,6 +38,7 @@ alias vs="code"
 alias cls="clear"
 alias n="nvim"
 alias cd="z"
+alias ls="lsd -l"
 
 # For SSH keys
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
@@ -43,3 +47,10 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 # function fish_greeting
 #     fastfetch
 # end
+
+# pnpm
+set -gx PNPM_HOME "/home/pacatro/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

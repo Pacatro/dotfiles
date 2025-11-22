@@ -10,6 +10,7 @@ return {
         hide_by_name = { "__pycache__", ".git", ".mypy_cache", ".pytest_cache", ".venv" },
         never_show = {},
       },
+      group_empty_dirs = true,
     },
   },
 }
