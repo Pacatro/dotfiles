@@ -13,6 +13,10 @@ set LANGUAGE en_US.UTF-8
 set -gx LANG $LANGUAGE
 set -gx LC_ALL $LANGUAGE
 
+# CUDA
+set -gx PATH /opt/cuda/bin $PATH
+set -gx LD_LIBRARY_PATH /opt/cuda/lib64 $LD_LIBRARY_PATH
+
 # Ghostty term info
 # set -x TERM xterm-256color
 
@@ -25,7 +29,7 @@ zoxide init fish | source
 # Try integration
 eval (/usr/bin/try init ~/src/tries | string collect)
 
-# # Go
+# Go
 # set -x GOROOT /usr/local/go
 # set -x GOPATH $HOME/go
 # set -x PATH $PATH $GOROOT/bin $GOPATH/bin
@@ -39,6 +43,7 @@ alias cls="clear"
 alias n="nvim"
 alias cd="z"
 alias ls="lsd -l"
+alias py="python3"
 
 # For SSH keys
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
@@ -54,3 +59,6 @@ if not string match -q -- $PNPM_HOME $PATH
     set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+# opencode
+fish_add_path /home/pacatro/.opencode/bin

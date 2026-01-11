@@ -12,6 +12,10 @@ window-padding-y = 14
 confirm-close-surface=false
 resize-overlay = never
 
+# Trasnparency
+background-opacity = 0.8
+
+
 # Cursor stlying
 cursor-style = "block"
 cursor-style-blink = false
@@ -44,4 +48,4 @@ keybind = super+shift+r=reload_config
 keybind = super+t=new_tab
 
 # Slowdown mouse scrolling
-mouse-scroll-multiplier = 0.95
+mouse-scroll-multiplier = 2.0
