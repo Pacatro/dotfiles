@@ -1,31 +1,21 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
+source /usr/share/cachyos-fish-config/cachyos-config.fish
+alias n="nvim"
+alias e="exit"
+alias cd="z"
+alias cls="clear"
+alias vs="code"
+
+zoxide init fish | source
+starship init fish | source
+# overwrite greeting
+# potentially disabling fastfetch
+#function fish_greeting
+#    # smth smth
+#end
+set -gx PNPM_HOME "/home/pacatro/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 
-# Ghostty term info
-set -x TERM xterm-256color
-
-# Use starship prompt
-starship init fish | source
-
-# Zoxide integration
-zoxide init fish | source
-
-# Go
-set -x GOROOT /usr/local/go
-set -x GOPATH $HOME/go
-set -x PATH $PATH $GOROOT/bin $GOPATH/bin
-
-# Aliases
-alias e="exit"
-alias update="sudo dnf upgrade --refresh && sudo dnf system-upgrade download"
-alias update_apt="sudo apt update && sudo apt upgrade"
-alias vs="code"
-alias cls="clear"
-alias n="nvim"
-alias cd="z"
-
-# # Greeting
-# function fish_greeting
-#     fastfetch
-# end
+# opencode
+fish_add_path /home/pacoalgar/.opencode/bin
