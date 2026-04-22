@@ -48,4 +48,7 @@ keybind = super+shift+r=reload_config
 keybind = super+t=new_tab
 
 # Slowdown mouse scrolling
-mouse-scroll-multiplier = 2.0
+# mouse-scroll-multiplier = 2.0
+
+# Fix general slowness on hyprland (https://github.com/ghostty-org/ghostty/discussions/3224)
+async-backend = epoll
