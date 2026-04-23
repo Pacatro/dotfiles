@@ -4,6 +4,7 @@ theme = catppuccin.conf
 # Window
 # window-height=30
 # window-width=110
+# maximize = true
 
 # Background
 background-opacity = 0.9
